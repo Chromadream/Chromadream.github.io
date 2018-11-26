@@ -43,7 +43,7 @@
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
     "predev": "postcss tailwind.css -o tailwind.custom.css",
     "prebuild": "postcss tailwind.css -o tailwind.custom.css",
-    "deploy":"gatsby build && gh-pages -d public",
+    "deploy":"gatsby build && gh-pages -d public -b master",
     "predeploy": "postcss tailwind.css -o tailwind.custom.css"
   },
   "devDependencies": {
