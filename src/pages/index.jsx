@@ -1,8 +1,8 @@
 /* global tw */
 import React from 'react';
 import styled from 'react-emotion';
-import 'typeface-cantata-one';
-import 'typeface-open-sans';
+import 'typeface-quicksand';
+import 'typeface-playfair-display';
 import { Parallax, ParallaxLayer } from 'react-spring/dist/addons';
 import SEO from '../components/SEO';
 import SVG from '../components/SVG';
@@ -106,12 +106,16 @@ const AboutSub = styled.span`
 
 const AboutDesc = styled.p`
   ${tw('text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify')};
+  a {
+    color: #a779e9;
+    text-decoration: none;
+  }
 `;
 
 const ContactText = styled.p`
   ${tw('text-grey-light font-sans text-xl md:text-2xl lg:text-3xl')};
   a {
-    color: #e07628;
+    color: #a779e9;
     text-decoration: none;
   }
 `;
@@ -119,7 +123,7 @@ const ContactText = styled.p`
 const Footer = styled.footer`
   ${tw('text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg')};
   a {
-    color: #e07628;
+    color: #a779e9;
     text-decoration: none;
   }
 `;
@@ -130,76 +134,86 @@ const Index = () => (
     <Parallax pages={5}>
       <Divider speed={0.2} offset={0}>
         <UpDown>
-          <SVG icon="triangle" className={hidden} width={48} stroke={colors["purple-lighter"]} left="10%" top="20%" />
-          <SVG icon="hexa" width={48} stroke={colors["orange-light"]} left="60%" top="70%" />
-          <SVG icon="box" width={6} fill={colors['grey-darker']} left="60%" top="15%" />
+          <SVG icon="triangle" className={hidden} width={48} stroke={colors['purple-lighter']} left="10%" top="20%" />
+          <SVG icon="hexa" width={48} stroke={colors['orange-light']} left="60%" top="70%" />
+          <SVG icon="box" width={6} fill={colors['indigo-darker']} left="60%" top="15%" />
         </UpDown>
         <UpDownWide>
-          <SVG icon="arrowUp" className={hidden} width={16} fill={colors["green-lighter"]} left="80%" top="10%" />
+          <SVG icon="arrowUp" className={hidden} width={16} fill={colors['green-lighter']} left="80%" top="10%" />
           <SVG icon="triangle" width={12} stroke={colors.white} left="90%" top="50%" />
-          <SVG icon="circle" width={16} fill={colors['grey-darker']} left="70%" top="90%" />
-          <SVG icon="triangle" width={16} stroke={colors['grey-darkest']} left="30%" top="65%" />
-          <SVG icon="circle" width={6} fill={colors['grey-darkest']} left="75%" top="10%" />
-          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="45%" top="10%" />
+          <SVG icon="circle" width={16} fill={colors['indigo-darker']} left="70%" top="90%" />
+          <SVG icon="triangle" width={16} stroke={colors['purple-light']} left="30%" top="65%" />
+          <SVG icon="circle" width={6} fill={colors['purple-light']} left="75%" top="10%" />
+          <SVG icon="upDown" className={hidden} width={8} fill={colors['purple-light']} left="45%" top="10%" />
         </UpDownWide>
-        <SVG icon="circle" className={hidden} width={24} fill={colors['grey-darker']} left="5%" top="70%" />
-        <SVG icon="circle" width={6} fill={colors['grey-darkest']} left="4%" top="20%" />
-        <SVG icon="circle" width={12} fill={colors['grey-darkest']} left="50%" top="60%" />
-        <SVG icon="upDown" width={8} fill={colors['grey-darkest']} left="95%" top="90%" />
-        <SVG icon="upDown" className={hidden} width={24} fill={colors['grey-darker']} left="40%" top="80%" />
-        <SVG icon="triangle" width={8} stroke={colors['grey-darker']} left="25%" top="5%" />
-        <SVG icon="circle" width={64} fill={colors.green} left="95%" top="5%" />
-        <SVG icon="box" className={hidden} width={64} fill={colors.purple} left="5%" top="90%" />
-        <SVG icon="box" width={6} fill={colors['grey-darkest']} left="10%" top="10%" />
-        <SVG icon="box" width={12} fill={colors['grey-darkest']} left="40%" top="30%" />
-        <SVG icon="hexa" width={16} stroke={colors['grey-darker']} left="10%" top="50%" />
-        <SVG icon="hexa" width={8} stroke={colors['grey-darker']} left="80%" top="70%" />
+        <SVG icon="circle" className={hidden} width={24} fill={colors['indigo-darker']} left="5%" top="70%" />
+        <SVG icon="circle" width={6} fill={colors['purple-light']} left="4%" top="20%" />
+        <SVG icon="circle" width={12} fill={colors['purple-light']} left="50%" top="60%" />
+        <SVG icon="upDown" width={8} fill={colors['purple-light']} left="95%" top="90%" />
+        <SVG icon="upDown" className={hidden} width={24} fill={colors['indigo-darker']} left="40%" top="80%" />
+        <SVG icon="triangle" width={8} stroke={colors['indigo-darker']} left="25%" top="5%" />
+        <SVG icon="circle" width={64} fill={colors['purple-light']} left="95%" top="5%" />
+        <SVG icon="box" className={hidden} width={64} fill={colors['purple-darker']} left="5%" top="90%" />
+        <SVG icon="box" width={6} fill={colors['purple-light']} left="10%" top="10%" />
+        <SVG icon="box" width={12} fill={colors['purple-light']} left="40%" top="30%" />
+        <SVG icon="hexa" width={16} stroke={colors['indigo-darker']} left="10%" top="50%" />
+        <SVG icon="hexa" width={8} stroke={colors['indigo-darker']} left="80%" top="70%" />
       </Divider>
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
             Hello, <br /> I'm Jonathan Nicholas.
           </BigTitle>
-          <Subtitle>I develop a lot of cool things through the power of code.</Subtitle>
+          <Subtitle>I develop a lot of great things for great people.</Subtitle>
         </Hero>
       </Content>
-      <DividerMiddle
-        bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
-        speed={-0.2}
-        offset={1.1}
-        factor={2}
-      />
-      <Content speed={0.4} offset={1.2} factor={2}>
+      <DividerMiddle bg="linear-gradient(to right, #232526 0%, #414345 100%)" speed={-0.2} offset={1.1} factor={2} />
+      <Content speed={0.2} offset={1.3} factor={2}>
         <Inner>
           <Title>Projects</Title>
           <ProjectsWrapper>
             <ProjectCard
-              title="Freiheit"
-              link="https://www.behance.net/gallery/58937147/Freiheit"
+              title="instiz"
+              link="https://github.com/Chromadream/instiz"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
             >
-              This project is my entry to Adobe's #ChallengeYourPerspective contest.
+              An open-source Python3 library to load and process data from iChart.
             </ProjectCard>
             <ProjectCard
-              title="Harry Potter"
-              link="https://www.behance.net/gallery/52915793/Harry-Potter"
-              bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+              title="Tele-Modding"
+              link="https://github.com/rindonesia/tele-modding"
+              bg="linear-gradient(to right, #000428 0%, #004e92 100%)"
             >
-              I entered the DOCMA 2017 award with this Harry Potter inspired image.
+              A Reddit-Telegram integration tool, developed for /r/Indonesia community of Reddit.
             </ProjectCard>
             <ProjectCard
-              title="Tomb Raider"
-              link="https://www.behance.net/gallery/43907099/Tomb-Raider"
-              bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+              title="Gemilang_POS"
+              link="https://github.com/Chromadream/Gemilang_POS"
+              bg="linear-gradient(to right, #e65c00 0%, #F9D423 100%)"
             >
-              Recreation of a Tomb Raider Wallpaper (Fan Art)
+              A Point-of-Sales, Inventory Control, and Loyalty Card application, developed for a medium-scale printing
+              company in Indonesia with PHP7.
             </ProjectCard>
             <ProjectCard
-              title="Eagle"
-              link="https://www.behance.net/gallery/38068151/Eagle"
-              bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+              title="anicast-timer"
+              link="https://github.com/Chromadream/anicast-timer"
+              bg="linear-gradient(to right, #363795 0%, #005C97 100%)"
             >
-              A fantasy image manipulation relocating the habitat of wild animals.
+              A Discord bot written in Go, developed for timekeeping purposes while recording podcasts on Discord.
+            </ProjectCard>
+            <ProjectCard
+              title="/r/kpop"
+              link="https://github.com/rkpop"
+              bg="linear-gradient(to left, #FF0099 0%, #493240 100%)"
+            >
+              I created a lot of cool things for /r/kpop, the largest K-Pop dedicated community on the Internet.
+            </ProjectCard>
+            <ProjectCard
+              title="DramaWiki-Native"
+              link="https://github.com/DramaWiki-Native"
+              bg="linear-gradient(to right, #182848 0%, #4b6cb7 100%)"
+            >
+              A mobile application for DramaWiki, developed in Flutter, with Go backend for data parsing.
             </ProjectCard>
           </ProjectsWrapper>
         </Inner>
@@ -230,21 +244,21 @@ const Index = () => (
       <Divider speed={0.1} offset={3}>
         <UpDown>
           <SVG icon="box" className={hidden} width={6} fill={colors.blue} left="50%" top="75%" />
-          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
-          <SVG icon="triangle" width={8} stroke={colors['grey-darkest']} left="25%" top="5%" />
+          <SVG icon="upDown" className={hidden} width={8} fill={colors['purple-light']} left="70%" top="20%" />
+          <SVG icon="triangle" width={8} stroke={colors['purple-light']} left="25%" top="5%" />
           <SVG icon="upDown" className={hidden} width={24} fill={colors.orange} left="80%" top="80%" />
         </UpDown>
         <UpDownWide>
           <SVG icon="arrowUp" className={hidden} width={16} fill={colors.purple} left="5%" top="80%" />
           <SVG icon="triangle" width={12} stroke={colors.white} left="95%" top="50%" />
           <SVG icon="circle" width={6} fill={colors.white} left="85%" top="15%" />
-          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="45%" top="10%" />
+          <SVG icon="upDown" className={hidden} width={8} fill={colors['purple-light']} left="45%" top="10%" />
         </UpDownWide>
         <SVG icon="circle" width={6} fill={colors.white} left="4%" top="20%" />
-        <SVG icon="circle" width={12} fill={colors['grey-darkest']} left="70%" top="60%" />
+        <SVG icon="circle" width={12} fill={colors['purple-light']} left="70%" top="60%" />
         <SVG icon="box" width={6} fill={colors.orange} left="10%" top="10%" />
-        <SVG icon="box" width={12} fill={colors['grey-darkest']} left="20%" top="30%" />
-        <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
+        <SVG icon="box" width={12} fill={colors['purple-light']} left="20%" top="30%" />
+        <SVG icon="hexa" width={8} stroke={colors['purple-light']} left="80%" top="70%" />
       </Divider>
       <Content speed={0.4} offset={3}>
         <Inner>
@@ -252,16 +266,17 @@ const Index = () => (
           <AboutHero>
             <Avatar src={avatar} alt="John Doe" />
             <AboutSub>
-              The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
-              Emoji into my speech to better express myself. Winky face.
+              Give me a problem, and desired language, and I'll be able to work through it and deliver great results for
+              you.
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-            every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
-            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
-            all right?
+            I am Jonathan Nicholas, a recent graduate from Monash University. My interest includes working with
+            different APIs to solve real-world problems, and developing clean, modern websites. You're looking at one
+            now. Take a look on my{' '}
+            <a href="https://github.com/Chromadream/resume/raw/master/JonathanNicholasResume.pdf">Resume</a> to see if I
+            am a good fit for you and your company's need. Or, just go to my{' '}
+            <a href="https://github.com/Chromadream/">GitHub</a> profile to see my current and past works.
           </AboutDesc>
         </Inner>
       </Content>
@@ -285,30 +300,29 @@ const Index = () => (
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+            Say <a href="mailto:Jonathan.Nicholas@protonmail.com">Hi</a> or find me on other platforms:{' '}
+            <a href="https://dev.to/chromadream">dev.to</a> &{' '}
+            <a href="https://www.linkedin.com/in/jonathan-nicholas-40517114a/">LinkedIn</a>.
           </ContactText>
         </Inner>
         <Footer>
-          &copy; 2018 by Gatsby Starter Portfolio Cara.{' '}
-          <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>.
+          &copy; 2018, Chromadream. <a href="https://github.com/Chromadream/Chromadream.github.io">Source Code</a>.
         </Footer>
       </Content>
       <Divider speed={0.1} offset={4}>
         <UpDown>
-          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
-          <SVG icon="triangle" width={8} stroke={colors['grey-darkest']} left="25%" top="5%" />
+          <SVG icon="upDown" className={hidden} width={8} fill={colors['purple-light']} left="70%" top="20%" />
+          <SVG icon="triangle" width={8} stroke={colors['purple-light']} left="25%" top="5%" />
         </UpDown>
         <UpDownWide>
           <SVG icon="triangle" width={12} stroke={colors.white} left="95%" top="50%" />
           <SVG icon="circle" width={6} fill={colors.white} left="85%" top="15%" />
-          <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="45%" top="10%" />
+          <SVG icon="upDown" className={hidden} width={8} fill={colors['purple-light']} left="45%" top="10%" />
         </UpDownWide>
         <SVG icon="circle" width={6} fill={colors.white} left="4%" top="20%" />
-        <SVG icon="circle" width={12} fill={colors['grey-darkest']} left="70%" top="60%" />
-        <SVG icon="box" width={12} fill={colors['grey-darkest']} left="20%" top="30%" />
-        <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
+        <SVG icon="circle" width={12} fill={colors['purple-light']} left="70%" top="60%" />
+        <SVG icon="box" width={12} fill={colors['purple-light']} left="20%" top="30%" />
+        <SVG icon="hexa" width={8} stroke={colors['purple-light']} left="80%" top="70%" />
       </Divider>
     </Parallax>
   </React.Fragment>

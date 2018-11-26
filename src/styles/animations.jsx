@@ -3,10 +3,10 @@ import styled, { keyframes, css } from 'react-emotion';
 
 export const rotate = keyframes`
   from {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 `;
 
