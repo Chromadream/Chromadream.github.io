@@ -43,8 +43,8 @@
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
     "predev": "postcss tailwind.css -o tailwind.custom.css",
     "prebuild": "postcss tailwind.css -o tailwind.custom.css",
-    "publish":"gatsby build && gh-pages -d public",
-    "prepublish": "postcss tailwind.css -o tailwind.custom.css"
+    "deploy":"gatsby build && gh-pages -d public",
+    "predeploy": "postcss tailwind.css -o tailwind.custom.css"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
