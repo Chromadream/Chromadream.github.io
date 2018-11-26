@@ -7,12 +7,12 @@ module.exports = {
   siteTitleAlt: 'Chromadream', // Alternative Site title for SEO
   siteUrl: 'https://Chromadream.github.io', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
-  siteLogo: '/logos/logo-1024.png', // Used for SEO and manifest
+  siteLogo: '/logos/logo-192x192.png', // Used for SEO and manifest
   siteDescription: 'Single Page Portfolio site for Jonathan Nicholas',
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
   userTwitter: '@Chromadream', // Twitter Username
-  ogSiteName: 'cara', // Facebook Site Name
+  ogSiteName: 'jonathan.nicholas1997', // Facebook Site Name
   ogLanguage: 'en_US', // Facebook Language
 
   // Manifest and Progress color
