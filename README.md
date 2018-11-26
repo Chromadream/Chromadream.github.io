@@ -1,3 +1,3 @@
-#userpage
+# Chromadream.github.io
 
-The page is modified from https://github.com/startpages/startpages.github.io/tree/master/startpages/nielsvanrijn_Dark-Startpage
+A Gatsby.js site developed for my portfolio. Based from [Cara](https://github.com/LekoArts/gatsby-starter-portfolio-cara).
