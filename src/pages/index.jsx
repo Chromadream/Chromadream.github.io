@@ -164,7 +164,7 @@ const Index = () => (
           <BigTitle>
             Hello, <br /> I'm Jonathan Nicholas.
           </BigTitle>
-          <Subtitle>I develop a lot of great things for great people.</Subtitle>
+          <Subtitle>I help people achieve great things, by creating applications and websites.</Subtitle>
         </Hero>
       </Content>
       <DividerMiddle bg="linear-gradient(to right, #232526 0%, #414345 100%)" speed={-0.2} offset={1.1} factor={2} />
